@@ -190,7 +190,6 @@ export default function MutualFundNavComparison() {
 		}
 	};
 
-	// Add a new fund
 	const addFund = () => {
 		if (!newFundCode) return;
 
