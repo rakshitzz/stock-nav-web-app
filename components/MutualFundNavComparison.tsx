@@ -14,6 +14,7 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { ChartContainer } from "@/components/ui/chart";
 import { fetchMutualFundData } from "@/lib/mutual-fund-actions";
+import { ModeToggle } from "./ThemeToggleButton";
 
 // Chart colors
 const chartColors = [
@@ -248,6 +249,7 @@ export default function MutualFundNavComparison() {
 				<div className="container flex h-16 items-center px-4 sm:px-6">
 					<h1 className="text-lg font-semibold">Mutual Fund NAV Comparison</h1>
 					<div className="ml-auto flex items-center space-x-2">
+						<ModeToggle />
 						<Popover
 							open={showAddFund}
 							onOpenChange={setShowAddFund}
