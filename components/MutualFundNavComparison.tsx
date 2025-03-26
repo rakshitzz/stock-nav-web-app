@@ -189,7 +189,7 @@ export default function MutualFundNavComparison() {
 			setLoading(false);
 		}
 	};
-
+// 
 	const addFund = () => {
 		if (!newFundCode) return;
 
